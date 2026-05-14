@@ -1,0 +1,67 @@
+body{
+    background-color: rgb(125, 136, 255);
+    font-family: sans-serif;
+    color: white;
+}
+
+.Links{
+    color: black;
+    padding: 30px 20px;
+}
+
+.galeria {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+.FotoAle, .FotoAmanda, .FotoBreno, .FotoGuilherme {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #c8d13f;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+    margin-top: 15px;
+}
+
+.FotoAle:hover,
+.FotoAmanda:hover,
+.FotoBreno:hover,
+.FotoGuilherme:hover {
+    transform: scale(1.1);
+}
+
+.nomes {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+.ra {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+.email {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 15px;
+    justify-content: space-between;
+}
+.curso {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 15px;
+    justify-content: space-between;
+}
