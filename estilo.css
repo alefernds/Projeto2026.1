@@ -1,67 +1,84 @@
-body{
-    background-color: rgb(125, 136, 255);
-    font-family: sans-serif;
+/* PAGINA DE DESENVOLVEDORES */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #120000, #3c0000);
+    font-family: Arial, Helvetica, sans-serif;
     color: white;
+    min-height: 100vh;
 }
 
-.Links{
-    color: black;
-    padding: 30px 20px;
-}
-
-.galeria {
+/* barra de links */
+.barra-de-navegacao {
     display: flex;
-    justify-content: center; 
-    align-items: center;
-    gap: 15px;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 30px;
+    padding: 25px;
 }
 
-.FotoAle, .FotoAmanda, .FotoBreno, .FotoGuilherme {
-    width: 200px;
-    height: 200px;
+.barra-de-navegacao a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.barra-de-navegacao a:hover {
+    color: #7b1616;
+}
+
+/* parte dos cards */
+.container-cards {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    padding: 40px;
+}
+
+/* card individual */
+.card {
+    background-color: rgba(255, 255, 255, 0.15);
+    width: 260px;
+    padding: 25px 15px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+/* fotos */
+.card img {
+    width: 160px;
+    height: 160px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid #c8d13f;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
-    transition: transform 0.3s ease;
-    margin-top: 15px;
+    border: 3px solid #590000;
+    margin-bottom: 15px;
 }
 
-.FotoAle:hover,
-.FotoAmanda:hover,
-.FotoBreno:hover,
-.FotoGuilherme:hover {
-    transform: scale(1.1);
+/* nome */
+.card h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
 }
 
-.nomes {
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    gap: 15px;
-    justify-content: space-between;
+/* dados */
+.card p {
+    font-size: 14px;
+    margin: 6px 0;
+    word-break: break-word;
 }
 
-.ra {
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    gap: 15px;
-    justify-content: space-between;
-}
+/* PAGINA DE INSTRUÇÕES */
 
-.email {
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    gap: 15px;
-    justify-content: space-between;
-}
-.curso {
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    gap: 15px;
-    justify-content: space-between;
-}
+    
