@@ -1,13 +1,18 @@
 /* página de instruções */
 
-/* barra de navegação: */
+body {
+    margin: 0;
+    background: linear-gradient(135deg, #120000, #3c0000);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* barra de navegação */
 .barra-de-navegacao {
     display: flex;
     justify-content: center;
     gap: 30px;
     padding: 25px;
     margin-top: 10px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .barra-de-navegacao a {
@@ -21,40 +26,30 @@
     color: #85641c;
 }
 
-.barra-de-navegacao a:hover::after {
-  transform: scaleX(1); 
-}
-
-
-/* body */
-body{
-    background: linear-gradient(135deg, #120000, #3c0000);
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-
-/* parte das Instruções: */
+/* parte das instruções */
 .instrucoes {
     background: linear-gradient(135deg, #120000, #3c0000);
     border: 4px solid #c9a84c;
     border-radius: 10px;
     min-height: 400px;
+    margin: 10px 100px 40px;
+    padding: 40px;
+
     display: flex;
-    align-items: center;
     justify-content: center;
-    margin-bottom: 40px;
-    padding: 20px;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-top: 10px;
-    box-shadow: 
+    align-items: center;
+    gap: 50px;
+
+    position: relative;
+
+    box-shadow:
         inset 0 0 30px rgba(0, 0, 0, 0.9),
         0 0 20px rgba(201, 168, 76, 0.1);
-    position: relative;
+
     transition: transform 0.3s ease;
 }
 
-.instrucoes:hover{
+.instrucoes:hover {
     transform: translateY(-8px);
 }
 
@@ -80,39 +75,26 @@ body{
     border-right: 2px solid #c9a84c;
 }
 
-.subtitulo1 {
-    position: absolute;
-    top: 40px;
-    left: 200px;
-    color: #85641c;
-}
-
-.subtitulo2 {
-    position: absolute;
-    top: 40px;
-    right: 200px;
-    color: #85641c;
-}
-
-.texto1 {
-    position: absolute;
-    top: 120px;
-    left: 100px;
+.bloco-instrucao {
+    width: 45%;
+    text-align: center;
     color: #dbcaa3;
 }
 
-.texto2 {
-    position: absolute;
-    top: 120px;
-    right: 100px;
-    color: #dbcaa3;
+.bloco-instrucao h3 {
+    color: #c9a84c;
+    margin-bottom: 30px;
+    font-size: 22px;
 }
 
-.linha-vertical{
-    position: absolute;
-    top: 30px;
-    left: 50%;
+.bloco-instrucao p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.linha-vertical {
     width: 3px;
-    height: 380px;
-    background-color:  #85641c;
+    height: 320px;
+    background-color: #85641c;
 }
