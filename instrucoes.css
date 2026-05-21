@@ -1,0 +1,118 @@
+/* página de instruções */
+
+/* barra de navegação: */
+.barra-de-navegacao {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 25px;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.barra-de-navegacao a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.barra-de-navegacao a:hover {
+    color: #85641c;
+}
+
+.barra-de-navegacao a:hover::after {
+  transform: scaleX(1); 
+}
+
+
+/* body */
+body{
+    background: linear-gradient(135deg, #120000, #3c0000);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* parte das Instruções: */
+.instrucoes {
+    background: linear-gradient(135deg, #120000, #3c0000);
+    border: 4px solid #c9a84c;
+    border-radius: 10px;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 10px;
+    box-shadow: 
+        inset 0 0 30px rgba(0, 0, 0, 0.9),
+        0 0 20px rgba(201, 168, 76, 0.1);
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.instrucoes:hover{
+    transform: translateY(-8px);
+}
+
+.instrucoes::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    border-top: 2px solid #c9a84c;
+    border-left: 2px solid #c9a84c;
+}
+
+.instrucoes::after {
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    border-bottom: 2px solid #c9a84c;
+    border-right: 2px solid #c9a84c;
+}
+
+.subtitulo1 {
+    position: absolute;
+    top: 40px;
+    left: 200px;
+    color: #85641c;
+}
+
+.subtitulo2 {
+    position: absolute;
+    top: 40px;
+    right: 200px;
+    color: #85641c;
+}
+
+.texto1 {
+    position: absolute;
+    top: 120px;
+    left: 100px;
+    color: #dbcaa3;
+}
+
+.texto2 {
+    position: absolute;
+    top: 120px;
+    right: 100px;
+    color: #dbcaa3;
+}
+
+.linha-vertical{
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    width: 3px;
+    height: 380px;
+    background-color:  #85641c;
+}
