@@ -27,6 +27,11 @@ body::before {
     pointer-events: none;
 }
 
+.barra-de-navegacao {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
 
 .container {
     background: linear-gradient(180deg, #3e2723 0%, #2c1810 50%, #1a0f0a 100%);
