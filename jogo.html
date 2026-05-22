@@ -1,52 +1,49 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Duelo no Velho Oeste</title>
-        <link rel="stylesheet" href="jogo.css">
-    </head>
-    <body>
-        <div class="container">
-     
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duelo no Velho Oeste</title>
+    <link rel="stylesheet" href="jogo.css">
+</head>
+
+<body>
+    <div class="container">
+
         <nav class="barra-de-navegacao">
-            <ul>
-                <li><a href="instrucoes.html">Instruções</a></li>
-                <li><a href="index.html">Jogo</a></li>
-                <li><a href="desev.html">Desenvolvedores</a></li>
-            </ul>
+            <a href="instrucoes.html">INSTRUÇÕES</a>
+            <a href="index.html">JOGO</a>
+            <a href="desev.html">DESENVOLVEDORES</a>
         </nav>
 
-        <div class="title">
+        <header class="title">
             <h1>O Último Duelo</h1>
-        </div>
-      
-        <div class="game-area">
-            <div class="game-placeholder">
-                <p class="game-text"> JOGO </p>
-            </div>
+        </header>
 
-            <!--Comece o duelo dos cowboys!
-            Cowboy A: Cima e baixo para movimentação, seta direita para atirar.
-            Cowboy B: W e S para movimentação, D para atirar.
-            Qual deles será o melhor pistoleiro do velho oeste?
-            E qual terá sua honra manchada?
-            Jogue "O Último Duelo" e descubra o que 
-            o destino aguarda!
-            Para começar o duelo, aperte o botão "START" -->
-           
-        </div>
-    
+        <main class="game-area">
+            <div class="game-placeholder">
+                <h2>Comece o duelo dos cowboys!</h2>
+
+                <p><strong>Cowboy A:</strong> Cima e baixo para movimentação, seta direita para atirar.</p>
+                <p><strong>Cowboy B:</strong> W e S para movimentação, D para atirar.</p>
+
+                <p>Qual deles será o melhor pistoleiro do velho oeste?</p>
+                <p>E qual terá sua honra manchada?</p>
+
+                <p>Jogue <strong>"O Último Duelo"</strong> e descubra o que o destino aguarda!</p>
+                <p>Para começar o duelo, aperte o botão <strong>START</strong>.</p>
+            </div>
+        </main>
+
         <div class="button-container">
-            <button class="play-button" onclick="startGame()">
-                 START
-            </button>
+            <button class="play-button" onclick="startGame()">START</button>
         </div>
+
+    </div>
 
     <script>
         function startGame() {
             window.location.href = 'seu-jogo.html';
-            // iniciar/abrir o jogo 
         }
     </script>
 </body>
